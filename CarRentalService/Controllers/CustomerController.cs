@@ -12,9 +12,9 @@ namespace customerRentalService.Controllers
     {
         List<Customer> customers = new List<Customer>
         {
-            new Customer { id = 1, firstname = "Hannah", surname = "Müller", title = "Dr.", age = 35, notes = "Kindersitz für 4-jährige" },
-            new Customer { id = 2, firstname = "Otto", surname = "Bauer", title = "Dipl. Ing.", age = 53, notes = "kein Duftbaum" },
-            new Customer { id = 3, firstname = "Alexander", surname = "Huber", title = "Herr", age = 18, notes = "Gurtschutz" }
+            new Customer { Id = 1, Firstname = "Hannah", Surname = "Müller", Title = "Dr.", Age = 35, Notes = "Kindersitz für 4-jährige" },
+            new Customer { Id = 2, Firstname = "Otto", Surname = "Bauer", Title = "Dipl. Ing.", Age = 53, Notes = "kein Duftbaum" },
+            new Customer { Id = 3, Firstname = "Alexander", Surname = "Huber", Title = "Herr", Age = 18, Notes = "n/a" }
         };
 
         public IEnumerable<Customer> GetAllCustomers()
@@ -24,7 +24,7 @@ namespace customerRentalService.Controllers
 
         public IHttpActionResult GetCustomer(int id)
         {
-            var customer = customers.First((c) => c.id == id);
+            var customer = customers.First((c) => c.Id == id);
             if (customer == null)
             {
                 return NotFound();
@@ -50,7 +50,7 @@ namespace customerRentalService.Controllers
         {
             try
             {
-                var toBeDeleted = customers.First((c) => c.id == id);
+                var toBeDeleted = customers.First((c) => c.Id == id);
                 customers.Remove(toBeDeleted);
                 customers.Add(value);
                 return Request.CreateResponse(HttpStatusCode.OK);
@@ -66,7 +66,7 @@ namespace customerRentalService.Controllers
         {
             try
             {
-                var toBeDeleted = customers.First((c) => c.id == id);
+                var toBeDeleted = customers.First((c) => c.Id == id);
                 customers.Remove(toBeDeleted);
                 return Request.CreateResponse(HttpStatusCode.OK);
             }

@@ -7,10 +7,10 @@ namespace CarRentalService.Models
 {
     public class Car
     {
-        public int id { get; set; }
-        public string make { get; set; }
-        public string name { get; set; }
-        public decimal pricePerHour { get; set; }
-        public string colour { get; set; }
+        public int Id { get; set; }
+        public string Make { get; set; }
+        public string Name { get; set; }
+        public decimal PricePerHour { get; set; }
+        public string Colour { get; set; }
     }
 }

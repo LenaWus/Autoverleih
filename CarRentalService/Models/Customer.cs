@@ -7,13 +7,13 @@ namespace CarRentalService.Models
 {
     public class Customer
     {
-        public int id { get; set; }
-        public string firstname { get; set; }
-        public string surname { get; set; }
-        public string title { get; set; }
-        public int age { get; set; }
-        public List<Car> rented { get; set; }
-        public string notes { get; set; }
+        public int Id { get; set; }
+        public string Firstname { get; set; }
+        public string Surname { get; set; }
+        public string Title { get; set; }
+        public int Age { get; set; }
+        public List<Car> Rented { get; set; }
+        public string Notes { get; set; }
 
     }
 }

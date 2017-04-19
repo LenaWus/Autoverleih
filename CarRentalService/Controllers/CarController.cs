@@ -12,9 +12,9 @@ namespace CarRentalService.Controllers
     {
         List<Car> cars = new List<Car>
         {
-            new Car { id = 1, make = "Volkswagen", name = "Golf", pricePerHour = 1, colour = "silber" },
-            new Car { id = 2, make = "Mazda", name = "MX-5 Miata", pricePerHour = 2, colour = "blau" },
-            new Car { id = 3, make = "Honda", name = "Odyssey",pricePerHour = 1.5M, colour = "schwarz" }
+            new Car { Id = 1, Make = "Volkswagen", Name = "Golf", PricePerHour = 1, Colour = "silber" },
+            new Car { Id = 2, Make = "Mazda", Name = "MX-5 Miata", PricePerHour = 2, Colour = "blau" },
+            new Car { Id = 3, Make = "Honda", Name = "Odyssey",PricePerHour = 1.5M, Colour = "schwarz" }
         };
 
         public IEnumerable<Car> GetAllCars()
@@ -24,7 +24,7 @@ namespace CarRentalService.Controllers
 
         public IHttpActionResult GetCar(int id)
         {
-            var car = cars.FirstOrDefault((c) => c.id == id);
+            var car = cars.FirstOrDefault((c) => c.Id == id);
             if (car == null)
             {
                 return NotFound();
@@ -50,7 +50,7 @@ namespace CarRentalService.Controllers
         {
             try
             {
-                var toBeDeleted = cars.First((c) => c.id == id);
+                var toBeDeleted = cars.First((c) => c.Id == id);
                 cars.Remove(toBeDeleted);
                 cars.Add(value);
                 return Request.CreateResponse(HttpStatusCode.OK);
@@ -66,7 +66,7 @@ namespace CarRentalService.Controllers
         {
             try
             {
-                var toBeDeleted = cars.First((c) => c.id == id);
+                var toBeDeleted = cars.First((c) => c.Id == id);
                 cars.Remove(toBeDeleted);
                 return Request.CreateResponse(HttpStatusCode.OK);
             }

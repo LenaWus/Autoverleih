@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[carDetails](@Make varchar, @Name varchar)
+﻿CREATE PROCEDURE [dbo].[carDetails](@CarID int)
 	
 AS
-	SELECT * FROM Car WHERE (Make=@Make AND Name=@Name)
+	SELECT * FROM Car WHERE (CarID = @CarID)

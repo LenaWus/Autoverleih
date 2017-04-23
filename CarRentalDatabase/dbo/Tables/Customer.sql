@@ -4,6 +4,6 @@
     [firstname] VARCHAR(50) NOT NULL, 
     [lastname] VARCHAR(50) NOT NULL, 
     [title] VARCHAR(50) NULL DEFAULT 'Herr/Frau', 
-    [age] SMALLINT NOT NULL, 
+    [age] INT NOT NULL, 
     [notes] VARCHAR(50) NULL DEFAULT 'N/A'
 )

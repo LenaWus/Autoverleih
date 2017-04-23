@@ -10,7 +10,9 @@ namespace CarRentalService
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            //config.Formatters.Remove(config.Formatters.JsonFormatter);
+            //config.Formatters.XmlFormatter.WriterSettings.OmitXmlDeclaration = true;
+            //config.Formatters.XmlFormatter.SupportedMediaTypes.RemoveAt(1);
             // Web API routes
             config.MapHttpAttributeRoutes();
 

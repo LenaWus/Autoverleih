@@ -1,0 +1,17 @@
+﻿<Window x:Class="CarRentalClient.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRentalClient"
+        mc:Ignorable="d"
+        Title="Willkommen" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="RentCarButton" Content="Auto ausleihen" HorizontalAlignment="Left" Height="50" Margin="26,87,0,0" VerticalAlignment="Top" Width="110" Click="GoToRentCarPage"/>
+        <Button x:Name="ReturnCarButton" Content="Auto Zurückgeben" HorizontalAlignment="Left" Height="50" Margin="157,87,0,0" VerticalAlignment="Top" Width="110" Click="GoToReturnCar"/>
+        <Button x:Name="NewCarButton" Content="Neues Auto &#xD;&#xA;    anlegen" HorizontalAlignment="Left" Height="50" Margin="26,205,0,0" VerticalAlignment="Top" Width="110" Click="GoToAddNewCar"/>
+        <Button x:Name="PriceButton" Content="Preise" HorizontalAlignment="Left" Height="50" Margin="89,146,0,0" VerticalAlignment="Top" Width="110" Click="GoToPrices"/>
+        <Button x:Name="NewCustomerButton" Content="Neuen Kunden &#xD;&#xA;      anlegen" HorizontalAlignment="Left" Height="50" Margin="157,205,0,0" VerticalAlignment="Top" Width="110" Click="GoToAddNewCustomer"/>
+        <Label x:Name="WelcomeLabel" Content="Willkommen beim Autoverleih! &#xD;&#xA;Bitte wählen Sie eine der unten &#xD;&#xA;angeführten Optionen, um fortzufahren." HorizontalAlignment="Left" Height="63" Margin="26,10,0,0" VerticalAlignment="Top" Width="241"/>
+    </Grid>
+</Window>

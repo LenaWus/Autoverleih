@@ -130,6 +130,7 @@
     <Folder Include="Security\" />
     <Folder Include="SalesLT\Sequences\" />
     <Folder Include="dbo\Sequences" />
+    <Folder Include="dbo\MyScripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SalesLT\Tables\Customer.sql">
@@ -222,11 +223,22 @@
     <Build Include="SalesLT\Sequences\SalesOrderNumber.sql" />
     <Build Include="dbo\Tables\Car.sql" />
     <Build Include="dbo\Tables\Customer.sql" />
-    <Build Include="dbo\Tables\RentedCars.sql" />
+    <Build Include="dbo\Tables\Rent.sql" />
     <Build Include="dbo\Sequences\CustomerIDSequence.sql" />
     <Build Include="dbo\Sequences\CarIDSequence.sql" />
     <Build Include="dbo\Stored Procedures\customerDetails.sql" />
     <Build Include="dbo\Stored Procedures\carDetails.sql" />
+    <Build Include="dbo\Stored Procedures\getAll.sql" />
+    <Build Include="dbo\Stored Procedures\getAllCustomers.sql" />
+    <Build Include="dbo\Stored Procedures\getAllCars.sql" />
+    <Build Include="dbo\Stored Procedures\getAllRentedCars.sql" />
+    <Build Include="dbo\Stored Procedures\addCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\addCar.sql" />
+    <Build Include="dbo\Stored Procedures\rentCar.sql" />
+    <Build Include="dbo\Stored Procedures\isCarFree.sql" />
+    <Build Include="dbo\Stored Procedures\alterCar.sql" />
+    <Build Include="dbo\Stored Procedures\returnCar.sql" />
+    <Build Include="dbo\Stored Procedures\getAllRents.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CarRentalDatabase.refactorlog" />

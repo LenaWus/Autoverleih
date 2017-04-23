@@ -15,14 +15,5 @@ namespace CarRentalService.Models
         public List<Car> Rented { get; set; }
         public string Notes { get; set; }
 
-        public override bool Equals(object obj)
-        {
-            if (!(obj is Customer))
-            {
-                return false;
-            }
-            Customer other = obj as Customer;
-            return this.Id == other.Id;
-        }
     }
 }

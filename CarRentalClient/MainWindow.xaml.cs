@@ -1,5 +1,4 @@
-﻿using CarRentalClient.Controller;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CarRentalClient.Views
+namespace CarRentalClient
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class PricesWindow : Window
+    public partial class MainWindow : Window
     {
-        CarController carController = new CarController();
-
-        public PricesWindow()
+        public MainWindow()
         {
             InitializeComponent();
-
-            var pricesListBox = (ListBox)FindName("CarPricesListBox");
-            pricesListBox.ItemsSource = carController.CarsFromFleet;
         }
     }
 }
